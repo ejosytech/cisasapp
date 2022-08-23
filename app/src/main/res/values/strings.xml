@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CBEASapp</string>
+    <string name="spinner_hint">Emergency Type</string>
+    <!-- External -->
+    <string name="message">Message</string>
+    <string name="phone_number">Phone number</string>
+    <string name="emergency_type">Emergency Type</string>
+    <string name="on_alarm">On Alarm</string>
+    <string name="sms_alert">SMS ALERT</string>
+    <string name="todo">TODO</string>
+    <string name="alarm_sent_status">Alarm Sent Status</string>
+    <string name="turn_off_alarm">Turn Off Alarm</string>
+    <string name="home">Home</string>
+    <string name="address">Address</string>
+    <string name="caller_location">Incidence Location</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="title_activity_webview">Incidence Location</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="close">CLOSE</string>
+    <string name="siren_alert">SIREN ALERT</string>
+    <string name="togglebutton">ToggleButton</string>
+
+    <string name="enabled">Enabled</string>
+    
+    <string name="Enable" />
+    <string name="incidence_type">Incidence Type</string>
+    <string name="disenable">Disenable</string>
+    <string name="off_alarm">Off Alarm</string>
+
+
+</resources>

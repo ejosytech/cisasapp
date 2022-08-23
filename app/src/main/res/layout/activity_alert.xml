@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alert_Activity">
+
+    <TextView
+        android:id="@+id/txt_msg_sent_status"
+        android:layout_width="297dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/alarm_sent_status"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_stop_alarm"
+        android:layout_width="254dp"
+        android:layout_height="225dp"
+        android:layout_above="@+id/txt_msg_sent_status"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/round_btn_purple"
+        android:text="@string/turn_off_alarm"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_msg_sent_status"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/btn_main_home"
+        android:layout_width="122dp"
+        android:layout_height="67dp"
+        android:layout_above="@+id/btn_stop_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="222dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button_green"
+        android:text="@string/home"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_msg_sent_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+</RelativeLayout>

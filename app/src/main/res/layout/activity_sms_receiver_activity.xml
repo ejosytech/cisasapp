@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ejosy.cisasapp.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    app:rb_color="#0099CC"
+    app:rb_duration="3000"
+    app:rb_radius="32dp"
+    app:rb_rippleAmount="6"
+    app:rb_scale="6">
+
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/ave_street"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/phone_number"
+        android:textColor="#1B32AE"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_msg_received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/txt_msg_received"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_above="@+id/txt_phone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="81dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/message"
+        android:textColor="#AF1414"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ave_street"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_above="@+id/btn_map"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="11dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:text="@string/address"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="35dp"
+        android:background="#009688"
+        android:onClick="sendMessage"
+        android:text="@string/caller_location"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="268dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/txt_msg_received"
+        android:background="@drawable/round_button_green"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="113dp"
+        android:text="@string/stop_alarm"
+        android:visibility="visible" />
+
+
+</com.ejosy.cisasapp.RippleBackground>

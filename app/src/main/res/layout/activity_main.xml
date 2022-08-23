@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_main_home"
+        android:layout_width="125dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/txtincidence"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_button_green"
+        android:onClick="shutdown"
+        android:text="@string/close"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_emergency_type"
+        android:layout_width="286dp"
+        android:layout_height="49dp"
+        android:layout_above="@+id/toggleBtn_sms_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="27dp"
+        android:background="#CDDC39"
+        android:prompt="@string/incidence_type"
+        android:spinnerMode="dialog"
+        android:tooltipText="@string/spinner_hint"
+        tools:targetApi="o" />
+
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch_enable_btn_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_alarm"
+        android:clickable="true"
+        android:enabled="false"
+        android:focusable="true" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtn_sms_alarm"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/btn_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="195dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="18dp"
+        android:background="#FFFFFF"
+        android:text="@string/togglebutton"
+        android:textColor="#273DB8"
+        android:textOff="@string/sms_alert"
+        android:textOn="@string/siren_alert"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switch_enable_btn_alarm"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="19dp"
+        android:checked="false"
+        android:splitTrack="true"
+        android:text="@string/Enable"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/txtincidence"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_emergency_type"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/incidence_type"
+        android:textColor="#F31C0C"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_off_alarm"
+        android:layout_width="149dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/btn_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@+id/switch_enable_btn_alarm"
+        android:background="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="@string/off_alarm"
+        android:textColor="#0D28C1"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
